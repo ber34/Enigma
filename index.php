@@ -4,12 +4,12 @@ namespace EnigmaKriegsmarine
 require_once("EnigmaKriegsmarine/ClassEnigma.php");
 
              // Przestrzen nazw
-			 // Namespace
+	     // Namespace
               use EnigmaKriegsmarine;
-			  // Wywolanie klasy
+	     // Wywolanie klasy
     $enigma = new EnigmaKriegsmarine\ClassEnigma();
 
-  // Ustawiamy kod dla rotatorów (Ksi¹¿ka kodów szyfruj¹cych)
+  // Ustawiamy kod dla rotatorów (Ksiazka kodów szyfrujacych)
   // Set the code for rotators (Encryption Code Book)
     $textBoxBeben1="B";
     $textBoxBeben2="E";
@@ -21,8 +21,9 @@ require_once("EnigmaKriegsmarine/ClassEnigma.php");
     $textBoxBeben8="L";
     $textBoxBeben9="1";
     $textBoxBeben10="8";
+	
      // Przypisujemy wybrany kod do rotatorów
-	 // We assign the selected code to rotators
+     // We assign the selected code to rotators
     $enigma->WybraneBebnySzyfrujace( $textBoxBeben1, $textBoxBeben2,
                                      $textBoxBeben3, $textBoxBeben4,
                                      $textBoxBeben5, $textBoxBeben6,
@@ -30,7 +31,7 @@ require_once("EnigmaKriegsmarine/ClassEnigma.php");
                                      $textBoxBeben9, $textBoxBeben10 );
 
     // Podajemy teks do zaszyfrowania
-	// Enter the text to be encrypted
+    // Enter the text to be encrypted
     $enigma->SzyfrowanieInput("E");
     $enigma->SzyfrowanieInput("N");
     $enigma->SzyfrowanieInput("I");
@@ -42,16 +43,16 @@ require_once("EnigmaKriegsmarine/ClassEnigma.php");
     $enigma->SzyfrowanieInput("I");
     $enigma->SzyfrowanieInput("E");
     $enigma->SzyfrowanieInput("G");
-	  $enigma->SzyfrowanieInput("S");
+    $enigma->SzyfrowanieInput("S");
     $enigma->SzyfrowanieInput("M");
     $enigma->SzyfrowanieInput("A");
     $enigma->SzyfrowanieInput("R");
     $enigma->SzyfrowanieInput("I");
     $enigma->SzyfrowanieInput("N");
-	  $enigma->SzyfrowanieInput("E");
+    $enigma->SzyfrowanieInput("E");
 
     // Wypisujemy na ekranie tekst do zaszyfrowania
-	// Enter the text to be encrypted on the screen
+    // Enter the text to be encrypted on the screen
         $tab2 = $enigma->TextSzyfrowanieTab();		
 		$text = "<br>Tekst do zaszyfrowania-> ";	   
     for($i=0; $i<Count($tab2); $i++)
@@ -60,7 +61,7 @@ require_once("EnigmaKriegsmarine/ClassEnigma.php");
     }
       echo $text .= "<br>";
     // Tablica tekstu zaszyfrowanego, Wypisujemy na ekranie 
-	// Table of encrypted text, We type on the screen
+    // Table of encrypted text, We type on the screen
                    $tab = $enigma->SzyfrowanieOutputTab();
 		$text = "<br>Tekst zaszyfrowany -> ";	   
     for($i=0; $i<Count($tab); $i++)
@@ -68,10 +69,10 @@ require_once("EnigmaKriegsmarine/ClassEnigma.php");
         $text .= $tab[$i];
     }
       echo $text .= "<br>";
-  
 
    // Podajemy teks do odszyfrowania
    // We give the text to decrypt
+	
     $enigma->DeszyfrowanieInput("9");
     $enigma->DeszyfrowanieInput("I");
     $enigma->DeszyfrowanieInput("E");
@@ -83,7 +84,7 @@ require_once("EnigmaKriegsmarine/ClassEnigma.php");
     $enigma->DeszyfrowanieInput("K");
     $enigma->DeszyfrowanieInput("H");
     $enigma->DeszyfrowanieInput("K");
-	  $enigma->DeszyfrowanieInput("X");
+    $enigma->DeszyfrowanieInput("X");
     $enigma->DeszyfrowanieInput("S");
     $enigma->DeszyfrowanieInput("H");
     $enigma->DeszyfrowanieInput("Z");
@@ -91,10 +92,6 @@ require_once("EnigmaKriegsmarine/ClassEnigma.php");
     $enigma->DeszyfrowanieInput("X");
     $enigma->DeszyfrowanieInput("P");
   
-   
-	
-	
-	
   // tablica z calym tekstem Wypisujemy na ekranie
   // table with all text Enter on the screen
    $tab3 = $enigma->TextDeszyfrowanieTab();
