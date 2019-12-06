@@ -1,7 +1,7 @@
 <?php
 namespace EnigmaKriegsmarine
 {
-     require_once("EncryptionAndDecryption.php");
+         require_once("EncryptionAndDecryption.php");
 	 require_once("ValidateTrait.php");
 	/**
 	 * ClassEnigma short summary.
@@ -13,23 +13,21 @@ namespace EnigmaKriegsmarine
 	 * @version 1.0
 	 * @author Adam Berger
 	 */
-	 
-	class ClassEnigma extends EncryptionAndDecryption 
-	{
+  class ClassEnigma extends EncryptionAndDecryption 
+  {
         use ValidateTrait;
 
-        public function SzyfrowanieInput(string $tekstInput)
-        {
-               // zrobiæ sprawdzenie czy to s¹ litery i cyfry w pojedyñczym znaku
-            // wywo³anie traits
-			// Zmieniamy na duze litery
+      public function SzyfrowanieInput(string $tekstInput)
+      {
+               
+            // wywolanie traits
+	    // Zmieniamy na duze litery
 			    $tekstInput = strtoupper($tekstInput);
             if($this->ValidateString($tekstInput) === true)
-            {
-				  // echo Count($this->tabTekst_TEMP_Wprowadzony);
-				   $this->tabTekst_TEMP_Wprowadzony[Count($this->tabTekst_TEMP_Wprowadzony)] = $tekstInput;
-				 // print_r($this->tabTekst_TEMP_Wprowadzony);
-				$this->Szyfrowanie($tekstInput);
+            {		
+		$this->tabTekst_TEMP_Wprowadzony[Count($this->tabTekst_TEMP_Wprowadzony)] = $tekstInput;
+		
+		$this->Szyfrowanie($tekstInput);
             }
         }
 		
@@ -45,8 +43,8 @@ namespace EnigmaKriegsmarine
 
         public function DeszyfrowanieInput(string $tekstInput)
         {			
-            // zrobiæ sprawdzenie czy to s¹ litery i cyfry w pojedyñczym znaku
-            // wywo³anie traits
+           
+                        // wywolanie traits
 			// Zmieniamy na duze litery
 			$tekstInput = strtoupper($tekstInput);
             if($this->ValidateString($tekstInput) === true)
@@ -85,5 +83,5 @@ namespace EnigmaKriegsmarine
             $this->tabWybraneBebnySzyfrujace[8]=$textBoxBeben9;
             $this->tabWybraneBebnySzyfrujace[9]=$textBoxBeben10;
         }
-	}
+    }
 }
