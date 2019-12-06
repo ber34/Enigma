@@ -1,7 +1,7 @@
 <?php
 namespace EnigmaKriegsmarine
 {
-require_once("ClassEnigma.php");
+require_once("EnigmaKriegsmarine/ClassEnigma.php");
 
              // Przestrzen nazw
 			 // Namespace
