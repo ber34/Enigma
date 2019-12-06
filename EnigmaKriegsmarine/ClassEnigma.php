@@ -7,9 +7,9 @@ namespace EnigmaKriegsmarine
 	 * ClassEnigma short summary.
 	 *
 	 * ClassEnigma description.
-     * Simple Enigma Kriegsmarine for 10 rotator 36x36x36x36x36x36x36x36x36x36 = 3 656 158 440 062 976 brutal force
+         * Simple Enigma Kriegsmarine for 10 rotator 36x36x36x36x36x36x36x36x36x36 = 3 656 158 440 062 976 brutal force
 	 * License 
-     * Attribution-NonCommercial 3.0 Poland (CC BY-NC 3.0 PL) 
+         * Attribution-NonCommercial 3.0 Poland (CC BY-NC 3.0 PL) 
 	 * @version 1.0
 	 * @author Adam Berger
 	 */
@@ -17,32 +17,31 @@ namespace EnigmaKriegsmarine
   {
         use ValidateTrait;
 
-      public function SzyfrowanieInput(string $tekstInput)
-      {
-               
-            // wywolanie traits
-	    // Zmieniamy na duze litery
-			    $tekstInput = strtoupper($tekstInput);
-            if($this->ValidateString($tekstInput) === true)
-            {		
-		$this->tabTekst_TEMP_Wprowadzony[Count($this->tabTekst_TEMP_Wprowadzony)] = $tekstInput;
+     public function SzyfrowanieInput(string $tekstInput)
+     {
+           // wywolanie traits
+	   // Zmieniamy na duze litery
+	      $tekstInput = strtoupper($tekstInput);
+           if($this->ValidateString($tekstInput) === true)
+           {		
+	     $this->tabTekst_TEMP_Wprowadzony[Count($this->tabTekst_TEMP_Wprowadzony)] = $tekstInput;
 		
-		$this->Szyfrowanie($tekstInput);
-            }
-        }
+	     $this->Szyfrowanie($tekstInput);
+           }
+       }
 		
-		public function TextSzyfrowanieTab()
-		{
-			return $this->tabTekst_TEMP_Wprowadzony;
-		}
+       public function TextSzyfrowanieTab()
+       {
+	    return $this->tabTekst_TEMP_Wprowadzony;
+       }
 
-        public function SzyfrowanieOutputTab()
-        {
+       public function SzyfrowanieOutputTab()
+       {
             return $this->tabTekst_TEMP_Wprowadzony_Out;
-        }
+       }
 
-        public function DeszyfrowanieInput(string $tekstInput)
-        {			
+       public function DeszyfrowanieInput(string $tekstInput)
+       {			
            
                         // wywolanie traits
 			// Zmieniamy na duze litery
@@ -55,10 +54,10 @@ namespace EnigmaKriegsmarine
             }
         }
 		
-	    public function TextDeszyfrowanieTab()
-		{
-			return $this->tabTekst_Deszyfrowanie_TEMP_Wprowadzony;
-		}
+	public function TextDeszyfrowanieTab()
+	{
+	    return $this->tabTekst_Deszyfrowanie_TEMP_Wprowadzony;
+        }
 
         public function DeszyfrowanieOutput()
         {
