@@ -13,16 +13,16 @@ namespace EnigmaKriegsmarine
 	 */
     abstract class EncryptionAndDecryption
     {
-		protected $tabBebenSzyf_A = array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J",
+		protected $tabBebenSzyf_A = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J",
                                     "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T",
                                     "U", "V", "W", "X", "Y", "Z", "1", "2", "3", "4",
-                                    "5", "6", "7", "8", "9", "0");
+                                    "5", "6", "7", "8", "9", "0"];
 		
-		protected $tabWybraneBebnySzyfrujace = array();
-		protected $tabTekst_TEMP_Wprowadzony = array();
-                protected $tabTekst_TEMP_Wprowadzony_Out = array();
-		protected $tabTekst_Deszyfrowanie_TEMP_Wprowadzony = array();
-                protected $tabTekst_Deszyfrowanie_TEMP_Wprowadzony_Out = array();
+		protected $tabWybraneBebnySzyfrujace = [];
+		protected $tabTekst_TEMP_Wprowadzony = [];
+                protected $tabTekst_TEMP_Wprowadzony_Out = [];
+		protected $tabTekst_Deszyfrowanie_TEMP_Wprowadzony = [];
+                protected $tabTekst_Deszyfrowanie_TEMP_Wprowadzony_Out = [];
 		
         protected function arraySearch($arr)
         {
