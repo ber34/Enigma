@@ -30,26 +30,31 @@ require_once("EnigmaKriegsmarine/ClassEnigma.php");
                                      $textBoxBeben7, $textBoxBeben8,
                                      $textBoxBeben9, $textBoxBeben10 );
 
+     $string = "ENIGMAKREGSMARINE";
+     for($i=0; $i<strlen($string);$i++)
+     {	
+	$enigma->SzyfrowanieInput($string[$i]);
+     }
     // Podajemy teks do zaszyfrowania
     // Enter the text to be encrypted
-    $enigma->SzyfrowanieInput("E");
-    $enigma->SzyfrowanieInput("N");
-    $enigma->SzyfrowanieInput("I");
-    $enigma->SzyfrowanieInput("G");
-    $enigma->SzyfrowanieInput("M");
-    $enigma->SzyfrowanieInput("A");
-    $enigma->SzyfrowanieInput("K");
-    $enigma->SzyfrowanieInput("R");
-    $enigma->SzyfrowanieInput("I");
-    $enigma->SzyfrowanieInput("E");
-    $enigma->SzyfrowanieInput("G");
-    $enigma->SzyfrowanieInput("S");
-    $enigma->SzyfrowanieInput("M");
-    $enigma->SzyfrowanieInput("A");
-    $enigma->SzyfrowanieInput("R");
-    $enigma->SzyfrowanieInput("I");
-    $enigma->SzyfrowanieInput("N");
-    $enigma->SzyfrowanieInput("E");
+    //$enigma->SzyfrowanieInput("E");
+    //$enigma->SzyfrowanieInput("N");
+    //$enigma->SzyfrowanieInput("I");
+    //$enigma->SzyfrowanieInput("G");
+    //$enigma->SzyfrowanieInput("M");
+    //$enigma->SzyfrowanieInput("A");
+    //$enigma->SzyfrowanieInput("K");
+    //$enigma->SzyfrowanieInput("R");
+    //$enigma->SzyfrowanieInput("I");
+    //$enigma->SzyfrowanieInput("E");
+    //$enigma->SzyfrowanieInput("G");
+    //$enigma->SzyfrowanieInput("S");
+    //$enigma->SzyfrowanieInput("M");
+    //$enigma->SzyfrowanieInput("A");
+    //$enigma->SzyfrowanieInput("R");
+    //$enigma->SzyfrowanieInput("I");
+    //$enigma->SzyfrowanieInput("N");
+    //$enigma->SzyfrowanieInput("E");
 
     // Wypisujemy na ekranie tekst do zaszyfrowania
     // Enter the text to be encrypted on the screen
@@ -72,25 +77,29 @@ require_once("EnigmaKriegsmarine/ClassEnigma.php");
 
    // Podajemy teks do odszyfrowania
    // We give the text to decrypt
-	
-    $enigma->DeszyfrowanieInput("9");
-    $enigma->DeszyfrowanieInput("I");
-    $enigma->DeszyfrowanieInput("E");
-    $enigma->DeszyfrowanieInput("D");
-    $enigma->DeszyfrowanieInput("K");
-    $enigma->DeszyfrowanieInput("0");
-    $enigma->DeszyfrowanieInput("K");
-    $enigma->DeszyfrowanieInput("S");  
-    $enigma->DeszyfrowanieInput("K");
-    $enigma->DeszyfrowanieInput("H");
-    $enigma->DeszyfrowanieInput("K");
-    $enigma->DeszyfrowanieInput("X");
-    $enigma->DeszyfrowanieInput("S");
-    $enigma->DeszyfrowanieInput("H");
-    $enigma->DeszyfrowanieInput("Z");
-    $enigma->DeszyfrowanieInput("R");
-    $enigma->DeszyfrowanieInput("X");
-    $enigma->DeszyfrowanieInput("P");
+     $string = "9IEDK0KSKHKXSHZRXP";
+     for($i=0; $i<strlen($string);$i++)
+     {	
+	$enigma->DeszyfrowanieInput($string[$i]);
+     }
+    //$enigma->DeszyfrowanieInput("9");
+    //$enigma->DeszyfrowanieInput("I");
+    //$enigma->DeszyfrowanieInput("E");
+    //$enigma->DeszyfrowanieInput("D");
+    //$enigma->DeszyfrowanieInput("K");
+    //$enigma->DeszyfrowanieInput("0");
+    //$enigma->DeszyfrowanieInput("K");
+    //$enigma->DeszyfrowanieInput("S");  
+    //$enigma->DeszyfrowanieInput("K");
+    //$enigma->DeszyfrowanieInput("H");
+    //$enigma->DeszyfrowanieInput("K");
+    //$enigma->DeszyfrowanieInput("X");
+    //$enigma->DeszyfrowanieInput("S");
+    //$enigma->DeszyfrowanieInput("H");
+    //$enigma->DeszyfrowanieInput("Z");
+    //$enigma->DeszyfrowanieInput("R");
+    //$enigma->DeszyfrowanieInput("X");
+    //$enigma->DeszyfrowanieInput("P");
   
   // tablica z calym tekstem Wypisujemy na ekranie
   // table with all text Enter on the screen
